@@ -11,10 +11,13 @@ int main(){
     }
     // sortie du nombre le plus grand
     int max = tab[0];
+    int indice;
     for (int i=0; i<5; i++){
         if (tab[i] > max){
-            cout << "le nombre le plus grand est : " <<tab[i] <<endl;
+            max = tab[i];
+            indice = i;
         }
     }
+    cout << "le nombre le plus grand est : " <<max <<" avec l'indice"<< indice <<endl;
     return 0;
 }
